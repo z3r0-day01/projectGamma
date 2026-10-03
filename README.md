@@ -1,6 +1,6 @@
 # Project Gamma (Project Orange River)
 
-## Executive Overview (Restricted)
+## Executive Overview (EDIT BY A HUMAN: What type of Edgy Nonsense did CoPilot do?)
 
 _This document is classified and restricted to the Z3r0_DaYz Research Group Executives._
 
@@ -42,44 +42,7 @@ However, we’ll only cover the flagship and add to it.
 **Decaying Energetic Remembering Selective Stateful Space Double Filter V2**  
 **DERS3DFv2**
 
-```text
-R(x)={x≤0 ? 0.01x+0.1 : x+0.1)
-z(x)=R(x)²/Sum(r(x_n)²)
-N(x)=√(Sum(x²_n))
-De(a,b)=√(Sum((b-a)²))
-Dc(a,b): Cosine Distance
-
-M_t = (g_t [hadamard] Q_t) + (1 - g_t) [hadamard] (M_t-1 * SiLU(Q_t*M_t-1))
-L_t = [X_t, g_t-1]
-J_t = (J_t * S(W*L_t+B)) + (S(W*L_t+B)*Tanh(W*L_t+B))
-g_t = S(W*L_t+B)*Tanh(W*J_t+B)
-
-Note: each W/B is separate per operation.
-
-Lookup(x,n)=Sin(b*S(a*X_{n})*X_{n}+n) -> Scalar
-PosEnc(x)=Sin(b*S(a*X_{n})*X+n) -> Vector
-B = Linear_B(X_t)*Lookup(x,t) -> Scalar
-C = Linear_C(X_t)*PosEnc(x) -> Vector
-D = z(X)*Softplus(X_t) -> Vector
-Q=tanh(Wq*x_t+Wp*x_t-1)
-K=WK*Sigmoid(Wk*x_t+Wp*x_t-1)*x_t
-V=Tanh(Wa*Sigmoid(Wb^T*x_t)+x_t*Sigmoid(Wp^T*x_t-1))
-F=e^(-e^(d_t))
-d_t=ddlerp(x_t,x_t-1)*Wd
-R=DerSigmoid(Q)*R_t-1+Tanh(x_t)*DerTanh(Q)
-A = e^(∆*D)
-B_hat = ((e^(∆*D)-I)*∆*B)/(∆*A) ≈ ∆ * B
-∆ = Softplus(Linear_∆(X)*z(X)) -> Vector
-h_t = A*h_{t-1} + (B_hat)*z(F*K^T)*V -> Matrix
-y_t = C*z(Q*R)*h_t + S(y_{t-1})*M_t -> Matrix
-Uhat_t=½x_t*x_t^T
-Ohat_t=½Tr(y_t-1*y_t-1^T)
-∆epsilon_t aka ∆E_t=Tanh(Uhat_T - Ohat_t)
-E_int=((x_t*y_t^T)/(N(x_t)*N(y_t)+Epsilon))
-Z_t = RMSNorm(S(x_t)*lerp(x_{t},y_{t},∆)+De([x_t,y_t],[x_{t-1},y_{t-1}])*Z_{t-1}) -> Scalar
-P_t=exp(((E_int*Z_t)/(Softplus(∆E_t)+epsilon))
-O = RMSNorm((SiLU(Dc([x_t,y_t],[x_{t-1},y_{t-1}])*Z_t)*P_t)*y_t)*tanh(Z_t) -> Matrix
-```
+Math Removed temporarily.
 
 ---
 
@@ -116,6 +79,8 @@ AA-BBB-C-DD
 
 An outer loop runs up to 3 times, limited to 32 total loops including inner loops.
 
+Stolen from Deepmind!
+
 ### Mixture of Experts
 
 8 routed + 1 shared.
@@ -146,5 +111,7 @@ Routing limits:
 - Active: affective information and data
 
 ### DeepEmbeddings
+
+Edit by Human: Where'd it go?
 
 Vector factorization of matrices for disk storage and temporary use in RAM.

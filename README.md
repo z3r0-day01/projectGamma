@@ -2,15 +2,13 @@
 
 ## Executive Overview (EDIT BY A HUMAN: What type of Edgy Nonsense did CoPilot do?)
 
-_This document is classified and restricted to the Z3r0_DaYz Research Group Executives._
+Hallucinations here are crazy.
 
-Z3r0_DaYz Software Group & Z3r0_DaYz Intelligence Research Group  
-TANGERINE Conglomerate & GRAPEFRUIT Conglomerate Research Joint-Project
+Z3r0_DaYz Software Group & Z3r0_DaYz Intelligence Research Group
 
 ---
 
 PROJECT ORANGE_RIVER  
-(Notice: this may be referred to by executives as Project Gamma or its sister project, Project Walnut.)
 
 ## Ideas
 
